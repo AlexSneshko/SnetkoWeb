@@ -53,7 +53,7 @@
                 </form>
             </td>
             <td>
-                <form action="http://fe.it-academy.by/TestForm.php" method="POST" target="blank" name="third">
+                <form action="http://fe.it-academy.by/TestForm.php" method="POST" target="blank" name="4th">
                     <fieldset>
                         <legend>Как вам?</legend>
                         <label>
@@ -70,6 +70,47 @@
                         </label>
                         <input type="hidden" name="date_voite" value="2013.12.31">
                         <input type="submit" value="Отправить">
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="POST" target="blank" name="5th">
+                    <fieldset>
+                        <legend>Авторизуйтесь</legend>
+                        <input required type="text" name="login"><sup>*</sup> Имя<br>
+                        <input required type="email" name="email" pattern="(\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,6})"><sup>*</sup> e-mail<br>
+                        <textarea name="text">Форма отправки</textarea><br>
+                        <input type="submit" value="Отправить">
+                    </fieldset>
+                </form>
+            </td>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="POST" target="blank" name="6th">
+                    <fieldset>
+                        <legend>Города РБ</legend>
+                        <select name="city">
+                            <option value="0">Брест</option>
+                            <option value="1">Минск</option>
+                            <option value="2">Витебск</option>
+                            <option value="3">Москва</option>
+                            <option value="4">Рязань</option>
+                            <option value="5">Магадан</option>
+                        </select>
+                        <select name="multyCity[]" size="8" multiple>
+                            <optgroup label="Города РБ">
+                                <option value="0">Брест</option>
+                                <option value="1">Минск</option>
+                                <option value="2">Витебск</option>
+                            </optgroup>
+                            <optgroup label="Города России">
+                                <option value="3">Москва</option>
+                                <option value="4">Рязань</option>
+                                <option value="5">Магадан</option>
+                            </optgroup>
+                        </select>
+                        <input type="submit" value="Ок">
                     </fieldset>
                 </form>
             </td>
@@ -104,10 +145,6 @@
                     </fieldset>
                 </form>
             </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
         </tr>
     </table>
 </body>

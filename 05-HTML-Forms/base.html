@@ -5,7 +5,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action=" http://fe.it-academy.by/TestForm.php" method="POST" target="blank" name="data">
+    <form action="http://fe.it-academy.by/TestForm.php" method="POST" target="blank" name="data">
         <fieldset>
             <legend>Личные дынные</legend>
             <input required type="text" autofocus placeholder="Фамилия" name="secondName" pattern="[А-Яа-я]{1,}" maxlength="25"><br>
@@ -76,20 +76,21 @@
         </fieldset>
         <fieldset>
             <legend>Данные для входа и восстановления пароля</legend>
-            <input required type="text" name="login" pattern="[A-Za-z]{5,}" maxlength="20"><br>
-            <input required type="password" name="password" pattern="[A-Za-z]{10,}" maxlength="20" autocomplete="off">
+            <input required type="text" placeholder="Логин" name="login" pattern="[A-Za-z]{5,}" maxlength="20"><br>
+            <input required type="password" placeholder="Пароль" name="password" pattern="[A-Za-z]{10,}" maxlength="20" autocomplete="off">
         </fieldset>
         <fieldset>
-            <legend></legend>
-            <input type="email" name="email"><br>
-            <input type="url" name="url">
+            <legend>Координаты</legend>
+            <input type="email" placeholder="введите адрес почты" name="email"><br>
+            <input type="url" placeholder="введите адрес сайта" name="url">
         </fieldset>
         <fieldset>
-            <legend></legend>
+            <legend>Цифры</legend>
             <input type="number" min="-2.5" max="2.5" step="0.1" name="number"><br>
             <input type="range" min="1" max="10" name="range">
         </fieldset>
         <fieldset>
+            <legend>Кнопки управления</legend>
             <input type="submit">
             <input type="reset"><br>
             <button>

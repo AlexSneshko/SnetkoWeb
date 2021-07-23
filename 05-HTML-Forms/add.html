@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <table style="width: 700px;">
+        <tr>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="POST" target="blank" name="first">
+                    <fieldset>
+                        <legend>Строка поиска</legend>
+                        <input type="text" name="search" maxlength="10">
+                        <input type="submit" value="Искать"><br>
+                        <label>
+                            <input type="radio" name="firstChoice" value="site">на сайте
+                        </label>
+                        <label>
+                            <input type="radio" name="firstChoice" value="google">в гугле
+                        </label>  
+                    </fieldset>
+                </form>
+            </td>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="POST" target="blank" name="second">
+                    <fieldset>
+                        <legend>Строка поиска</legend>
+                        <input required autofocus type="text" name="search" maxlength="10"><sup>*</sup>
+                        <input type="submit" value="Искать"><br>
+                        <label>
+                            <input type="radio" name="firstChoice" value="site">на сайте
+                        </label>
+                        <label>
+                            <input type="radio" name="firstChoice" value="google">в гугле
+                        </label>  
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="POST" target="blank" name="third">
+                    <fieldset>
+                        <legend>Авторизуйтесь</legend>
+                        <input required type="text" name="login"><sup>*</sup> Логин<br>
+                        <input required type="password" name="password"><sup>*</sup> Пароль<br>
+                        <label>
+                            <input type="checkbox" name="stayInSystem"> Оставаться в системе
+                        </label><br>
+                        <input type="submit" value="Войти">
+                    </fieldset>
+                </form>
+            </td>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="POST" target="blank" name="third">
+                    <fieldset>
+                        <legend>Как вам?</legend>
+                        <label>
+                            <input type="radio" name="opinion" value="nothing">ничего<br>
+                        </label>
+                        <label>
+                            <input type="radio" name="opinion" value="notBad">неплохо<br>
+                        </label>
+                        <label>
+                            <input type="radio" name="opinion" value="good">хорошо<br>
+                        </label>
+                        <label>
+                            <input type="radio" name="opinion" value="great">супер<br>
+                        </label>
+                        <input type="hidden" name="date_voite" value="2013.12.31">
+                        <input type="submit" value="Отправить">
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="POST" target="blank" name="7th" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Upload</legend>
+                        <label>
+                            File:
+                            <input type="file" name="file"><br>
+                        </label>
+                        <label>
+                            Срок хранения:<br>
+                            <input type="number" name="shelfLife">
+                        </label>
+                        <input type="submit" value="Загрузить">
+                    </fieldset>
+                </form>
+            </td>
+            <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="POST" target="blank" name="8th">
+                    <fieldset>
+                        <legend>Строка поиска</legend>
+                        <input type="text" placeholder="Только Русские буквы" name="text" pattern="[А-Яа-я]{0,}"><br>
+                        <label>
+                            Телефонный номер<br>
+                            <input type="tel" name="tel" pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$"><br>
+                        </label>
+                        <input type="submit" value="Проверить">
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

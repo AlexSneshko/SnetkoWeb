@@ -1,0 +1,25 @@
+.card3{
+    background-image: url("cards.png");
+    background-position: -145px -195px;
+    width: 140px;
+    height: 200px;
+    float: left;
+}
+
+.card5{
+    background-image: url("cards.png");
+    background-position: -430px -590px;
+    width: 140px;
+    height: 195px;
+    float: left;
+    margin-left: -60px;
+}
+
+.card9{
+    background-image: url("cards.png");
+    background-position: -145px -1385px;
+    width: 140px;
+    height: 195px;
+    float: left;
+    margin-left: -60px;
+}
